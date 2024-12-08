@@ -124,11 +124,6 @@ importantDates.push("100");
 
 // ---------------------------------------
 
-const drink = {
-	color: "brown",
-	carbonated: true,
-	sugar: 40
-};
 
 // tuples arrrrrr
 

@@ -1,0 +1,11 @@
+[
+  {
+    "applyTo": "key=AIzaSyBaddHFHhQflHANZlp8DEUnhra-KOzvsfY",
+    "headers": [
+      {
+        "name": "content-security-policy",
+        "value": "header value"
+      }
+    ]
+  }
+]
