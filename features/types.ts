@@ -84,9 +84,9 @@ const forecast = {
 	weather: 'sunny'
 };
 // first the de-structuring, then the annotation
-const logWeather = ({date, weather}}: { date: Date; weather: string }): void => {
-	console.log(forecast.date);
-	console.log(forecast.weather);
+const logWeather = ({ date, weather }: { date: Date; weather: string }): void => {
+	console.log(date);    // Correct reference to 'date'
+	console.log(weather); // Correct reference to 'weather'
 };
 
 
