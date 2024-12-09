@@ -2,7 +2,7 @@ const { faker } = require('@faker-js/faker');
 
 export default 'NetDevs';
 
-export class Company {
+export class Company implements Mappable {
 	companyName: string;
 	catchPhrase: string;
 	location: {
