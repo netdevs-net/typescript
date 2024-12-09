@@ -1,6 +1,11 @@
-export class NumbersCollection {
+import { SorterL } from "./SorterL";
+
+export class NumbersCollection extends SorterL {
 		
-	constructor(public data: number[]) {}
+	constructor(public data: number[]) {
+		super();
+	}
+	
 	
 	get length(): number {
 		return this.data.length;

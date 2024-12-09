@@ -1,4 +1,4 @@
-export class CharactersCollection implements Sortable {
+export class CharactersCollection {
 	constructor (public data: string) {}
 	
 	get length(): number {
