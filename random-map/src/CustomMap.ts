@@ -22,6 +22,7 @@ export class CustomMap {
 		});
 	}
 	
+	
 	addMarker(mappable: Mappable): void {
 		new google.maps.Marker({
 			map: this.googleMap,

@@ -5,6 +5,7 @@ import { User } from './User';
 import { Company } from './Company';
 import { CustomMap } from './CustomMap';
 
+
 // building the map 
 (window as any).initMap = () => {
 	const user = new User();
