@@ -2,3 +2,4 @@ node_modules
 .nova
 .parcel-cache
 ._DS_Store
+*dist/
