@@ -1,16 +1,17 @@
-import { User } from './User';
-import { Company } from './Company';
+// import { User } from './User';
+// import { Company } from './Company';
 
-interface Mappable {
+export interface Mappable {
 	location: {
 		lat: number;
 		lng: number;
 	}
 	markerContent(): string;
+	color: string;
 }
 
 export class CustomMap {
-	public googleMap: google.maps.Map;
+	private googleMap: google.maps.Map;
 
 	constructor(divId: string) {
 	// Initialize the map inside the constructor
@@ -24,7 +25,7 @@ export class CustomMap {
 	}
 	
 	
-	addMarker(mappable: Mappable, type: Type): void {
+	addMarker(mappable: Mappable): void {
 		const marker = new google.maps.Marker({
 			map: this.googleMap,
 			position: {

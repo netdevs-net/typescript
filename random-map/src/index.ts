@@ -1,3 +1,5 @@
+
+
 /// <reference types="@types/google.maps" />
 
 // importing Classes
@@ -6,7 +8,7 @@ import { Company } from './Company';
 import { CustomMap } from './CustomMap';
 
 
-// building the map 
+// building the map with window.initMap event
 (window as any).initMap = () => {
 	const user = new User();
 	const company = new Company();
