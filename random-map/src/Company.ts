@@ -1,4 +1,6 @@
 const { faker } = require('@faker-js/faker');
+import { Mappable } from "./CustomMap";
+
 
 export default 'NetDevs';
 

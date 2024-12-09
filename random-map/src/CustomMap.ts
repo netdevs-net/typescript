@@ -31,6 +31,14 @@ export class CustomMap {
 			position: {
 				lat: mappable.location.lat,
 				lng: mappable.location.lng
+			}, 
+			icon: {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 14,
+				fillColor: mappable.color,
+				fillOpacity: 1,
+				strokeWeight: 3,
+				strokeColor: 'white',
 			}
 		})
 		const infoWindow = new google.maps.InfoWindow({
