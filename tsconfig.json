@@ -1,15 +1,27 @@
 {
 	"compilerOptions": {
-		"module": "ES2020",
-		"target": "ES2020",
-		"esModuleInterop": true,
-		"strict": true,
-		"outDir": "./sort/dist",
-		"rootDir": "./sort/src",
-		"baseUrl": "./",           // Root of the TypeScript project
-		"typeRoots": ["../node_modules/@types"], // Custom path for types
-		"skipLibCheck": true
+		"module": "NodeNext",               // Use Node's native module system (ES modules)
+		"target": "ES2020",                 // Compile to modern JavaScript (ES2020)
+		"esModuleInterop": true,            // Allow import/export compatibility with CommonJS
+		"strict": true,                     // Enable all strict type-checking options
+		"outDir": "./sort/dist",            // Directory for compiled JavaScript files
+		"rootDir": "./sort/src",            // Root directory for TypeScript source files
+		"baseUrl": "./",                    // Base directory for resolving modules
+		"typeRoots": ["../node_modules/@types"], // Look for type definitions in node_modules/@types
+		"skipLibCheck": true,               // Skip type checking for third-party libraries
+		"moduleResolution": "NodeNext",    // Resolve modules as Node.js would with ES modules
+		"allowSyntheticDefaultImports": true,  // Allow default imports for CommonJS modules
+		"resolveJsonModule": true           // Allow importing JSON files as modules
 	},
-	"include": ["sort/src/**/*"],
-	"exclude": ["node_modules"]
+
+	// Files and folders TypeScript should compile
+	"include": [
+		"sort/src/**/*"                   // ** Includes all files in the `sort/src` folder and subfolders
+	],
+
+	// Files and folders TypeScript should ignore
+	"exclude": [
+		"node_modules",                   // ** Ignore all third-party libraries (handled by TypeScript automatically)
+		"dist"                            // ** Ignore the output folder to prevent infinite recompilation
+	]
 }

@@ -6,7 +6,6 @@ export class NumbersCollection extends SorterL {
 		super();
 	}
 	
-	
 	get length(): number {
 		return this.data.length;
 	}

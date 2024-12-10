@@ -6,7 +6,7 @@ interface Sortable {
 
 export abstract class SorterL {
 	abstract compare(leftIndex: number, rightIndex: number): boolean;
-	abstract swap(leftIndex: number, rightIndex: number): boolean;
+	abstract swap(leftIndex: number, rightIndex: number): void;
 	abstract length: number;
 	
 //	constructor(public collection: Sortable) {} - removed during refactor
@@ -23,4 +23,3 @@ export abstract class SorterL {
 		} 
 	}
 }
-w

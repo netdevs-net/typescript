@@ -1,17 +1,22 @@
 {
+  "name": "SorterList",
+  "version": "1.0.0",
+  "description": "A TypeScript Sorter using abstract classes to enhance performance",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "@types/google.maps": "^3.58.1",
+    "@types/node": "^22.10.1",
     "concurrently": "^9.1.0",
     "nodemon": "^3.1.7",
-    "pnpm": "^9.15.0"
+    "pnpm": "^9.15.0",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.3.0",
     "buffer": "^6.0.3",
     "parcel": "^2.13.2",
     "ts-node": "^10.9.2"
-  },
-  "scripts": {
-    "build": "tsc"
   }
 }
